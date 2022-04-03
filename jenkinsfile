@@ -1,7 +1,7 @@
 
 node {
 stage('Build') {
-echo 'Building....'
+python test.py
 }
 stage('Test') {
 echo 'Testing....'
