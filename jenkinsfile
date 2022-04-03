@@ -1,10 +1,10 @@
 
 node {
 stage('Build') {
-echo 'Building....'
+touch "${BUILD_iD}.txt"
 }
 stage('Test') {
-echo 'Building....'
+echo 'Testing....'
 }
 stage('Deploy') {
 echo 'Deploying....'
