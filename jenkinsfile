@@ -1,7 +1,8 @@
 
 node {
 stage('Build') {
-touch test.txt
+ls
+
 }
 stage('Test') {
 echo 'Testing....'
