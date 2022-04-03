@@ -1,7 +1,7 @@
 
 node {
 stage('Build') {
-touch "${BUILD_iD}.txt"
+cat "${BUILD_iD}.txt"
 }
 stage('Test') {
 echo 'Testing....'
