@@ -4,7 +4,7 @@ stage('Build') {
 checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'GIT_ACCOUNT', url: 'https://github.com/anuraggupta1690/devops.git']]])
 }
 stage('Test') {
-echo 'Testing....'
+sh 'python3 test.py'
 }
 stage('Deploy') {
 echo 'Deploying....'
